@@ -13,9 +13,19 @@
     color: vars.$white;
     font-size: 1.5rem;
     margin-left: 5rem;
+    &::after {
+      display: block;
+      content: "";
+      margin-top: -1rem;
+      margin-left: 11rem;
+      width: 705px;
+      height: 1px;
+      background-color: vars.$white; 
+    }
   }
   &_container {
-  width: auto;
+  margin-left: 9rem;
+  border-left: 1px solid vars.$white;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,3 +36,4 @@
     width: 17%;
   } 
 }
+
