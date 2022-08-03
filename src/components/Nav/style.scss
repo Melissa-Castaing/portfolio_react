@@ -1,0 +1,43 @@
+@use "../../vars";
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/font/Poppins-Thin.ttf');
+}
+.nav {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &_title {
+    margin-left: 2rem;
+    border: 1px solid vars.$white;
+    padding: 1rem;
+  }
+  &_button {
+    background-color: vars.$navColor;
+    color: vars.$white;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+  }
+  &_link {
+    margin-left: 2rem;
+    transition: all 0.5s ease-out;
+    // display inline block permet que toute la nav ne bouge pas au survol du bouton
+    display:inline-block;
+  }
+  &_media {
+    margin-left: auto;
+    margin-right: 2rem;
+    &_logo {
+      margin-left: 2.5rem;
+      margin-top: 0.3rem;
+    }
+  }
+   
+}
+a:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,49 @@
+@use "../../vars";
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('../../assets/font/Poppins-Light.ttf');
+}
+
+.hobbies {
+  &_title {
+    font-family: 'Poppins-Light';
+    text-transform: uppercase;
+    color: vars.$white;
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    &_list {
+      display: flex;
+      justify-content: space-around;
+      border-top: 1px solid vars.$lightGrey;
+      border-bottom: 1px solid vars.$lightGrey;
+      background-color: vars.$lightGrey;
+      &_second {
+        font-family: 'Poppins';
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: vars.$navColor;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        position: relative;
+        &::after {
+          width: 0;
+          height: 0;
+          border-top: 20px solid vars.$lightGrey;
+          border-left: 30px solid transparent;
+          border-right: 30px solid transparent;
+          content: "";
+          position: absolute;
+          top: 35px;
+          right: 10px;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  &_sliders {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
