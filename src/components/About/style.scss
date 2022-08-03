@@ -15,14 +15,20 @@
 //   }
 //   &_profil {
 //     width: 8%;
-//     clip-path: ellipse(49% 28%);
+//     clip-path: ellipse(49% 28%)
 //   }
 // }
 
 @use '../../vars';
 
 .about {
-  border: 1px solid vars.$white;
+  
+  border-left: 1px solid vars.$white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
+
   // width: auto;
 //   border: 1px solid red;
 //   position: absolute;
@@ -31,10 +37,12 @@
     font-size: 2rem;
   }
   &_describe {
+    margin-left: 1.5rem;
+    width: 80%;
+    text-align: justify;
     font-family: 'Poppins';
     font-size: 1.2rem;
-    display: flex;
-    align-items: center;
+    
   }
      &_img {
         width: 10%;

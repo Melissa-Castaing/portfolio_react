@@ -48,8 +48,8 @@ export default function Nav() {
         ))}
       </nav>
       <div className="nav_media">
-        <a href="https://www.linkedin.com/in/m%C3%A9lissa-castaing-9b69a9235/" target="_blank" rel="noreferrer"><img className="nav_logo" src={linkedin} alt="Linkedin icon" width="60px" /></a>
-        <a href="https://github.com/Melissa-Castaing" target="_blank" rel="noreferrer"><img className="nav_logo" src={github} alt="Github icon" width="60px" /></a>
+        <a href="https://www.linkedin.com/in/m%C3%A9lissa-castaing-9b69a9235/" target="_blank" rel="noreferrer"><img className="nav_media_logo" src={linkedin} alt="Linkedin icon" width="60px" /></a>
+        <a href="https://github.com/Melissa-Castaing" target="_blank" rel="noreferrer"><img className="nav_media_logo" src={github} alt="Github icon" width="60px" /></a>
       </div>
     </div>
     // <nav className="nav">
